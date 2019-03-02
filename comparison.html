@@ -1,0 +1,126 @@
+<!-- Contains all of the visualizations on the same page so we can easily visually compare them. 
+Uses a bootstrap grid for the visualizations.
+
+The grid must be two visualizations across on screens medium and larger, and 1 across on extra-small and small screens-->
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+ 
+  <meta charset="UTF-8"  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <!-- Bring in our bootstrap stylesheets and custom stylesheet  -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+
+  <!-- Creates the Overall Grid -->
+  <div class="container">
+
+    <!-- First Row -->
+    <div class="row">
+
+    <!-- Start of navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid navbar-custom">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="row">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="col-xs-9 phone-nav">
+              <a class="navbar-brand" href="index.html" id="logo">Latitude</a>
+            </div>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right navbar-right-custom">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                 <li><a href="visualizations/temp.html">Max Temperature</a></li>
+                  <li><a href="visualizations/humidity.html">Humidity</a></li>
+                  <li><a href="visualizations/cloudiness.html">Cloudiness</a></li>
+                  <li><a href="visualizations/wind.html">Wind Speed</a></li>
+                </ul>
+              </li>
+              <li><a href="comparison.html">Comparison</a></li>
+              <li><a href="data.html">Data</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div>
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!-- End of navbar -->
+
+
+        <div class="card-header">
+           Comparison: Latitude vs. X
+        </div>
+        <div class="card-body">
+        	    <div class="row">
+			      <div class="col-md-6">
+			      	Click on any plot to get an in-depth analysis.
+			      	<br><br>
+			        <figure>
+			        	<figure class="figure">
+			        		<figcaption>vs. Max Temperature</figcaption>
+			          		<a href="visualizations/temp.html">
+			          			<img src="images/TemperatureVsLatitude.png" alt="Responsive image">
+			          		</a>
+			          	</figure>
+			          	<br><br>
+			          	<figure class="figure">
+				          	<figcaption class="figure-caption">vs. Humidity</figcaption>
+				          	<a href="visualizations/humidity.html">
+				          		<img src="images/HumidityVsLatitude.png" alt="Responsive image">
+				          	</a>
+			        </figure>
+			      </div>
+			      <br><br>
+			      <div class="col-md-6">
+			        <figure class="figure">
+			          	<figcaption class="figure-caption">vs. Cloudiness</figcaption>
+			          	<a href="visualizations/cloudiness.html">
+			          		<img src="images/CloudinessVsLatitude.png" alt="Responsive image">
+			          	</a>
+		          	</figure>
+		          	<br><br>
+		          	<figure class="figure">
+			          	<figcaption class="figure-caption">vs. Wind Speed</figcaption>
+			          	<a href="visualizations/wind.html">
+			          		<img src="images/WindSpeedVsLatitude.png" alt="Responsive image">
+			          	</a>
+		          	</figure>
+			      </div>
+			    </div>
+
+        </div>
+      </div>
+
+  	</div>
+
+</body>
+
+</html>
